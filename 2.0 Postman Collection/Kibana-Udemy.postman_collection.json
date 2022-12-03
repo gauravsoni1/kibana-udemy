@@ -30,14 +30,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/search/led",
+					"raw": "localhost:3000/search/iphone",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"search",
-						"led"
+						"iphone"
 					]
 				}
 			},
@@ -63,12 +63,23 @@
 		},
 		{
 			"name": "User SignIn",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\":\"gaurav\",\n    \"password\": \"123123\"\n}",
+					"raw": "{\n    \"username\":\"gaurav1\",\n    \"password\": \"123123\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -96,7 +107,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\":\"gaurav\",\n    \"password\": \"123123\"\n}",
+					"raw": "{\n    \"username\":\"gaurav1\",\n    \"password\": \"123123\",\n    \"email\": \"gaurav1@gmail.com\"   \n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -124,7 +135,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhdXJhdiIsInBhc3N3b3JkIjoiMTIzMTIzIiwiaWF0IjoxNjcwMDUzNjg0LCJleHAiOjE2NzAwNTcyODR9.ofwR66hwmCtFprFBaiktX2jMlwHrtRYA_4UK07d50WU",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhdXJhdjEiLCJwYXNzd29yZCI6IjEyMzEyMyIsImlhdCI6MTY3MDA5NDc4MiwiZXhwIjoxNjcwMDk4MzgyfQ.i611K4IOKfNn48UAsFci6vbD9c7vgomGdJUp4cvMA-Y",
 							"type": "string"
 						}
 					]
@@ -133,7 +144,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"title\":\"Led Light 64W\",\n    \"price\": \"12\",\n    \"description\": \"Awesome LED light for your home with 64 watt\"\n}",
+					"raw": "{\n    \"title\":\"Led Light 100W\",\n    \"price\": \"20\",\n    \"description\": \"Awesome led for outdoors\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -161,7 +172,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhdXJhdiIsInBhc3N3b3JkIjoiMTIzMTIzIiwiaWF0IjoxNjcwMDUzNjg0LCJleHAiOjE2NzAwNTcyODR9.ofwR66hwmCtFprFBaiktX2jMlwHrtRYA_4UK07d50WU",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhdXJhdjEiLCJwYXNzd29yZCI6IjEyMzEyMyIsImlhdCI6MTY3MDA5NDc4MiwiZXhwIjoxNjcwMDk4MzgyfQ.i611K4IOKfNn48UAsFci6vbD9c7vgomGdJUp4cvMA-Y",
 							"type": "string"
 						}
 					]
@@ -170,7 +181,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "[\n    {\n        \"title\": \"Led Light 64W\",\n        \"price\": \"12\",\n        \"description\": \"Awesome LED light for your home with 64 watt\"\n    },\n    {\n        \"title\": \"Led Light 100W\",\n        \"price\": \"20\",\n        \"description\": \"Outdoor LED light\"\n    }\n]",
+					"raw": "[\n    {\n        \"title\": \"Apple Iphone 128GB\",\n        \"price\": \"800\",\n        \"description\": \"128 GB Apple Iphone \"\n    },\n    {\n        \"title\": \"Apple Iphone 512GB\",\n        \"price\": \"1000\",\n        \"description\": \"Super expensive iphone\"\n    }\n]",
 					"options": {
 						"raw": {
 							"language": "json"
