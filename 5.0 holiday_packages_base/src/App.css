@@ -1,0 +1,14 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fde9df;
+}
+
+.app-content {
+  margin: 30px;
+}
+
+.deals-banner-img{
+  object-fit: cover;
+  width: 100%;
+}

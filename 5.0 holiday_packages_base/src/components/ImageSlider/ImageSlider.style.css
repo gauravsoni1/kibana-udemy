@@ -1,0 +1,11 @@
+.image-slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.image-slider-container > div {
+    box-shadow: -5px 10px 33px 0px rgba(0,0,0,0.6);
+    width: 900px;
+}
