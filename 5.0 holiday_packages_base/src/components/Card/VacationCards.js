@@ -1,7 +1,14 @@
 import CardTemplate from "./Card";
 import "./VacationCard.style.css";
+import { useNavigate } from "react-router-dom";
 
 const VacationCards = () => {
+  const navigate = useNavigate();
+
+  const onBookClick = (location) => {
+    navigate("details")
+  }
+
   return (
     <div class="card-container">
       <div class="card-row">
@@ -9,6 +16,7 @@ const VacationCards = () => {
           imgUrl="assets/norway.jpeg"
           title="Relax in Norway"
           text="Explore the beautiful scenic nature of Norway"
+          onBookClick={onBookClick}
         />
         <CardTemplate
           imgUrl="assets/newYork.jpeg"

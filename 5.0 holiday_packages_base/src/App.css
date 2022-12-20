@@ -2,13 +2,11 @@
   display: flex;
   flex-direction: column;
   background-color: #fde9df;
+  height: 100%;
 }
 
 .app-content {
   margin: 30px;
+  flex-grow: 1;
 }
 
-.deals-banner-img{
-  object-fit: cover;
-  width: 100%;
-}

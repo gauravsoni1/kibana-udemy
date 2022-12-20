@@ -1,17 +1,20 @@
 import './App.css';
-import ImageSlider from './components/ImageSlider/ImageSlider';
+
 import Header from './components/Header/Header';
-import OffersSection from './components/OffersSection/OffersSection';
 import FooterSection from './components/FooterSection/FooterSection';
+import HomePage from './pages/HomePage/HomePage';
+import { Routes, Route } from 'react-router-dom';
+import DealsDetails from './pages/DealsDetails/DealsDetails';
 
 function App() {
   return (
     <div className='app-container'>
       <Header />
       <div className='app-content'>
-        <ImageSlider />
-        <OffersSection />
-        <img className='deals-banner-img' src='/assets/deals-1.jpeg'></img>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='details' element={<DealsDetails />} />
+        </Routes>
       </div>
       <FooterSection />
     </div>
