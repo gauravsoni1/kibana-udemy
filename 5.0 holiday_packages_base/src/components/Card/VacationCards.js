@@ -10,8 +10,8 @@ const VacationCards = () => {
   }
 
   return (
-    <div class="card-container">
-      <div class="card-row">
+    <div className="card-container">
+      <div className="card-row">
         <CardTemplate
           imgUrl="assets/norway.jpeg"
           title="Relax in Norway"
@@ -34,7 +34,7 @@ const VacationCards = () => {
           text="Get a view from the world's tallest building , and get the best shopping experience."
         />
       </div>
-      <div class="card-row">
+      <div className="card-row">
         <CardTemplate
           imgUrl="assets/india.jpeg"
           title="Explore India"

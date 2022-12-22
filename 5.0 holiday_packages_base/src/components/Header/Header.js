@@ -1,7 +1,12 @@
 import { Navbar, Container, Form, Button } from 'react-bootstrap';
+
 import "./Header.style.css";
 
 const Header = () => {
+    const onSearchClick = () => {
+        console.log("Search Tours");
+    }
+
     return (
         <Navbar style={{ padding: 0, backgroundColor: "#ec7f4a" }}>
             <Container>
@@ -22,7 +27,7 @@ const Header = () => {
                         className="me-2"
                         aria-label="Search"
                     />
-                    <Button variant="primary">Search</Button>
+                    <Button name='searchHeader' data-transaction-name="searchButton" variant="primary" onClick={onSearchClick}>Search</Button>
                 </Form>
             </Container>
         </Navbar>

@@ -8,7 +8,8 @@ function CardTemplate({ imgUrl, title, text, onBookClick }) {
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>{text}</Card.Text>
-                <Button variant="primary" onClick={onBookClick}>Book Now!</Button>
+                <Button data-transaction-name="book" variant="primary" onClick={onBookClick}>Book Now!</Button>
+                <button data-transaction-name="purchase">Dummy Button</button>
             </Card.Body>
         </Card>
     );

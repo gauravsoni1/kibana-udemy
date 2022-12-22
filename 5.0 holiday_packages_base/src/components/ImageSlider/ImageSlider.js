@@ -3,7 +3,7 @@ import "./ImageSlider.style.css";
 
 function ImageSlider() {
     return (
-        <div class="image-slider-container">
+        <div className="image-slider-container" >
             <div>
                 <Carousel>
                     <Carousel.Item>
@@ -45,7 +45,7 @@ function ImageSlider() {
                     </Carousel.Item>
                 </Carousel>
             </div>
-        </div>
+        </div >
     );
 }
 
