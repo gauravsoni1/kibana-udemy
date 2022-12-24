@@ -8,12 +8,12 @@ const TermsConditions = ({ title, description }) => {
             <h5>{title}</h5>
             <hr></hr>
             <div className="term-conditions-details">
-                {description.map(item => {
+                {description.map((item,index) => {
                     return (
-                        <>
+                        <div key={index}>
                             <span>{item}</span>
                             <hr></hr>
-                        </>
+                        </div>
                     )
                 })}
             </div>

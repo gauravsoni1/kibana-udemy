@@ -6,14 +6,19 @@ import axios from 'axios';
 
 const DealsDetails = () => {
 
-    const sendInquiry = () =>{
-        
+    const sendInquiry = (e) => {
+        // e.preventDefault();
+        // axios.get("https://raw.githubusercontent.com/gauravsoni1/webpack-udemy/master/1.%20Getting%20Started/package.json").then(res => {
+        //     console.log(res?.data);
+        // }).catch(err => {
+        //     console.log(err);
+        // });
     }
 
 
     return <div className="deal-details-container">
         <div className="terms-conditions-section">
-            {TermsConditionsData.map((item) => <TermsConditions title={item.title} description={item.description}></TermsConditions>)}
+            {TermsConditionsData.map((item,index) => <TermsConditions key={index} title={item.title} description={item.description}></TermsConditions>)}
         </div>
         <div className="form-container">
             <h3>Inquire Now !!</h3>
@@ -31,7 +36,7 @@ const DealsDetails = () => {
                     <Form.Control type="text" placeholder="Phone" />
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
+                <Button variant="primary" type="submit" onClick={sendInquiry}>
                     Send Inquiry
                 </Button>
             </Form>

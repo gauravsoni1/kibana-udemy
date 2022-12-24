@@ -5,7 +5,7 @@ var apm = initApm({
     serviceName: 'vacation-booking',
 
     // Set custom APM Server URL (default: http://localhost:8200)
-    serverUrl: 'https://3db464537f044c269b47a3baa7d91eef.apm.us-central1.gcp.cloud.es.io:443',
+    serverUrl: '',
 
     // Set the service version (required for source map feature)
     serviceVersion: '',
