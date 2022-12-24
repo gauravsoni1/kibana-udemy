@@ -1,11 +1,16 @@
 import Button from 'react-bootstrap/Button';
 import "./FooterSection.style.css";
+import VacationIcon from '../../assets/vacationIcon.png';
+import FacebookIcon from '../../assets/facebook.png';
+import InstagramIcon from '../../assets/instagram.png';
+import TwitterIcon from '../../assets/twitter.png';
+import YoutubeIcon from '../../assets/youtube.png';
 
 const FooterSection = () => {
     return (
         <div className="footer-container">
             <div className="footer-container-col1">
-                <img src="assets/vacationIcon.png" alt="logo" />
+                <img src={VacationIcon} alt="logo" />
                 <hr></hr>
                 <h4>Vacation Planner</h4>
                 <span>Privacy Policy</span>
@@ -26,10 +31,10 @@ const FooterSection = () => {
                     <Button variant="primary">Subscribe</Button>
                 </div>
                 <div className='footer-social-container'>
-                    <img src='assets/facebook.png' alt='social-icon' />
-                    <img src='assets/instagram.png' alt='social-icon' />
-                    <img src='assets/twitter.png' alt='social-icon' />
-                    <img src='assets/youtube.png' alt='social-icon' />
+                    <img src={FacebookIcon} alt='social-icon' />
+                    <img src={InstagramIcon} alt='social-icon' />
+                    <img src={TwitterIcon} alt='social-icon' />
+                    <img src={YoutubeIcon} alt='social-icon' />
                 </div>
             </div>
         </div>

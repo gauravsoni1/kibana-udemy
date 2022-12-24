@@ -1,4 +1,13 @@
-.card-body-container{
+.card-body-container {
     display: flex;
     flex-direction: column;
+}
+
+.card-template-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-template-text {
+    flex-grow: 1;
 }

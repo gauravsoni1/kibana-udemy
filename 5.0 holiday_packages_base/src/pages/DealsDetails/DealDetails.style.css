@@ -1,3 +1,22 @@
-.terms-conditions-section{
+.deal-details-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terms-conditions-section {
+    display: flex;
+}
+
+.form-container {
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container > h3 {
+    text-decoration: underline;
+    margin-bottom: 20px;
 }
