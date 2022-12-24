@@ -2,15 +2,8 @@ import TermsConditions from "./TermsConditions/TermsConditions";
 import TermsConditionsData from './TermsConditions/termsConditions.json'
 import { Form, Button } from 'react-bootstrap';
 import "./DealDetails.style.css";
-import axios from 'axios';
 
 const DealsDetails = () => {
-
-    const sendInquiry = () =>{
-        
-    }
-
-
     return <div className="deal-details-container">
         <div className="terms-conditions-section">
             {TermsConditionsData.map((item) => <TermsConditions title={item.title} description={item.description}></TermsConditions>)}

@@ -1,0 +1,19 @@
+.term-conditions-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.term-conditions-container {
+    border: 1px solid grey;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(251, 241, 223);
+}
+
+.term-conditions-container > img{
+    height: 50px;
+    margin-bottom: 20px;
+}

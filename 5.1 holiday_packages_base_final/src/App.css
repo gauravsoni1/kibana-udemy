@@ -1,0 +1,11 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fde9df;
+}
+
+.app-content {
+  margin: 30px;
+  flex-grow: 1;
+}
+

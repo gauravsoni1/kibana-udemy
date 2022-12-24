@@ -1,0 +1,31 @@
+.footer-container {
+    height: 300px;
+    background-color: #f68a54;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: white;
+}
+
+.footer-container-col3{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container-col3 > input{
+    margin-bottom: 10px;
+}
+
+.footer-container-col1>img {
+    height: 150px;
+}
+
+.footer-social-container {
+    display: flex;    
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.footer-social-container>img {
+    height: 50px;
+}
